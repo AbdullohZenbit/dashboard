@@ -1,5 +1,14 @@
-import { Box, styled } from "@mui/material";
+import { Box, Drawer, styled } from "@mui/material";
 import { Link } from "react-router-dom";
+
+export const StyledSidebar = styled(Drawer)(({ theme }) => ({
+  minWidth: 256,
+  minHeight: "100%",
+  "& .MuiPaper-root": {
+    background: theme.palette.primary.dark,
+    width: 256,
+  },
+}));
 
 export const SidebarHeader = styled(Box)(({ theme }) => ({
   height: 88,

@@ -6,3 +6,8 @@ export interface IMenuItem {
   path: string;
   textSecond?: string;
 }
+
+export interface ISelectItem {
+  label: string;
+  value: string;
+}

@@ -12,12 +12,17 @@ import { ReactComponent as SaveOutlinedSvg } from "./icons/SaveOutlined.svg";
 import { ReactComponent as SupportSvg } from "./icons/Support.svg";
 import { ReactComponent as TrashIconSvg } from "./icons/Trash.svg";
 import { ReactComponent as LogoBottomSvg } from "./icons/LogoBottom.svg";
-
+import { ReactComponent as ClearIconSvg } from "./icons/ClearIcon.svg";
+import { ReactComponent as CheckCircleSvg } from "./icons/CheckCircle.svg";
+import { ReactComponent as SelectArrowDown } from "./icons/SelectDownIcon.svg";
 export {
   LogoutSvg,
   TrashIconSvg,
+  SelectArrowDown,
   SaveOutlinedSvg,
   LogoBottomSvg,
+  CheckCircleSvg,
+  ClearIconSvg,
   LogoSvg,
   SupportSvg,
   ArrowDown,

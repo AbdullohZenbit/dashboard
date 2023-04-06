@@ -4,9 +4,19 @@ interface IButton extends ButtonProps {
   text: string;
   onClick?: () => {};
 }
-export const ButtonComponent: FC<IButton> = ({ text, startIcon, endIcon }) => {
+export const ButtonComponent: FC<IButton> = ({
+  text,
+  startIcon,
+  endIcon,
+  color,
+}) => {
   return (
-    <Button variant="contained" startIcon={startIcon} endIcon={endIcon}>
+    <Button
+      color={color}
+      variant="contained"
+      startIcon={startIcon}
+      endIcon={endIcon}
+    >
       <Typography variant="h6">{text}</Typography>
     </Button>
   );

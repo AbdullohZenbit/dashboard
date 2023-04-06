@@ -13,6 +13,12 @@ export const palette: Partial<Palette> = {
     light: "#1890FF",
     contrastText: "#FFFFFF",
   },
+  error: {
+    main: "#FE346E",
+    dark: "#FE346E",
+    light: "#FE346E",
+    contrastText: "#fff",
+  },
   secondary: {
     main: " rgba(24, 144, 255, 0.1)",
     dark: " rgba(24, 144, 255, 0.1)",

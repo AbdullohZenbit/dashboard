@@ -11,3 +11,6 @@ export * from "./IconSaveOutlined";
 export * from "./IconTrash";
 export * from "./IconSupport";
 export * from "./IconLogoBottom";
+export * from "./IconClear";
+export * from "./IconCheckCircle";
+export * from "./IconSelectDown";

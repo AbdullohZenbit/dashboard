@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 
 export const LayoutAdmin = () => {
   return (
-    <Box component={Stack} direction="row">
+    <Box minHeight="100vh" minWidth="100vw" component={Stack} direction="row">
       <Sidebar />
-      <Stack flex={2} minWidth="80%" direction="column">
+      <Stack minWidth="80%" direction="column">
         <Header />
         <Box p={4}>
           <Outlet />

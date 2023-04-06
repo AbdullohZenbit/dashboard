@@ -1,10 +1,10 @@
-import { Box, Divider, Drawer, Stack, Typography } from "@mui/material";
+import { Box, Divider, Stack, Typography } from "@mui/material";
 import { useSidebarHook } from "../../hooks/sidebarHook";
 import {
   SIDEBAR_BOTTOM_MENU,
   SIDEBAR_MENU,
 } from "../../constants/sidebar.constant";
-import { SidebarHeader, StyledLink } from "./SidebatStyle";
+import { SidebarHeader, StyledLink, StyledSidebar } from "./SidebatStyle";
 import { useLocation } from "react-router-dom";
 
 export const Sidebar = () => {
@@ -12,7 +12,11 @@ export const Sidebar = () => {
   const { pathname } = useLocation();
 
   return (
-    <Drawer variant="persistent" open={width > 768 && true}>
+    <StyledSidebar
+      variant="persistent"
+      sx={width < 768 ? { display: "none" } : {}}
+      open={width > 768 && true}
+    >
       <SidebarHeader>
         <Typography color="common.white" variant="h1">
           Logo
@@ -50,6 +54,6 @@ export const Sidebar = () => {
           })}
         </Box>
       </Stack>
-    </Drawer>
+    </StyledSidebar>
   );
 };
