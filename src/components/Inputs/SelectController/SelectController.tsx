@@ -1,6 +1,7 @@
+import { FC } from "react";
 import { FormLabel, MenuItem, Select, SelectProps, Stack } from "@mui/material";
-import React, { FC } from "react";
 import { ISelectItem } from "../../../models/IMenuItem";
+import { IconSelectDown } from "../../../assets";
 
 interface ISelectController extends SelectProps {
   label: string;
@@ -10,7 +11,6 @@ interface ISelectController extends SelectProps {
 }
 export const SelectController: FC<ISelectController> = ({
   label,
-  IconComponent,
   items,
   onChange,
   value,
@@ -19,7 +19,7 @@ export const SelectController: FC<ISelectController> = ({
     <Stack spacing={1}>
       <FormLabel>{label}</FormLabel>
       <Select
-        IconComponent={IconComponent}
+        IconComponent={IconSelectDown}
         onChange={onChange}
         value={value}
         fullWidth
